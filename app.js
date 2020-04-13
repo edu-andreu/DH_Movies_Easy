@@ -254,7 +254,7 @@ const countFilmsTitle = '🎬Total de peliculas en cartelera: ';
 
 			//lisado de sucursales
 			const listTheaters = theaters.map(theater => ' ✼ ' + theater.name + lb1 + ' 🏁 ' + theater.address + lb1 + ' → ' + theater.description);f
-			const message1listTheatersSorted = listTheaters.sort().join(lb2);
+			const listTheatersSorted = listTheaters.sort().join(lb2);
 
 			res.end(appName + sucursalesRoute + lb2 + theatersTitle + lb2 + listTheatersSorted);
 			break;
@@ -275,7 +275,7 @@ const countFilmsTitle = '🎬Total de peliculas en cartelera: ';
 
 		case '/preguntas-frecuentes':
 			//titulos
-			const faqRoute = '(Sucursales)';
+			const faqRoute = '(Preguntas Frecuentes)';
 			const faqTitle = '🆘Preguntas Frecuentes: ';
 
 			//lisado de sucursales
